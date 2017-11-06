@@ -7,11 +7,11 @@ public class Throw {
 	
 Dice dice1 = new Dice();
 Dice dice2 = new Dice();
-public void throwDices() {
-	dice1.throwDices();
+public void throwDice() {
+	dice1.throwDice();
 	dice1Value = dice1.getValue();
 	
-	dice2.throwDices();
+	dice2.throwDice();
 	dice2Value = dice2.getValue();
 
 	
