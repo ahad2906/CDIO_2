@@ -1,72 +1,34 @@
-package spil;
+package game;
 
-public class Kast {
+public class Throw {
 	private int sum;
-	private boolean dobbeltSeks;
-	private boolean dobbeltEnere;
-	private boolean erEns = false;
-	private int terning1Værdi;
-	private int terning2Værdi;
+	private int dice1Value;
+	private int dice2Value;
 	
-Terning terning1 = new Terning();
-Terning terning2 = new Terning();
-public void kastTerninger() {
-	terning1.kastTerning();
-	terning1Værdi = terning1.getVærdi();
+Dice dice1 = new Dice();
+Dice dice2 = new Dice();
+public void throwDices() {
+	dice1.throwDices();
+	dice1Value = dice1.getValue();
 	
-	terning2.kastTerning();
-	terning2Værdi = terning2.getVærdi();
+	dice2.throwDices();
+	dice2Value = dice2.getValue();
 
 	
-	sum = terning2.getVærdi() + terning1.getVærdi();
+	sum = dice1.getValue() + dice2.getValue();
 }
 
-public int getTerning1Værdi() {
-	return terning1Værdi;
+public int getDice1Value() {
+	return dice1Value;
 }
 
-public int getTerning2Værdi() {
-	return terning2Værdi;
+public int getDice2Value() {
+	return dice2Value;
 }
 
 public int getSum() {
 	return sum;
 }
-public void dobbeltSeks() {
-	if(sum==12) {
-		dobbeltSeks = true;
-
-		}
-	else {
-		dobbeltSeks = false;
-
 	
-	}
-	
-}
-public boolean isDobbeltSeks() {
-	return dobbeltSeks;
-}
-public void erDeEns() {
-	if(terning1.getVærdi() == terning2.getVærdi())
-		erEns = true;
-	else
-		erEns = false;
-	
-}
-public boolean isErEns() {
-	return erEns;
-}
 
-public void dobbeltEnere() {
-	if(this.sum==2)
-		dobbeltEnere = true;
-	else
-		dobbeltEnere = false;
-}
-
-public boolean isDobbeltEnere() {
-	return dobbeltEnere;
-}
-	
 }
