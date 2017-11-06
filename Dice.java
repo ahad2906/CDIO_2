@@ -7,8 +7,8 @@ public class Dice {
 	private final int MAX_VALUE = 6;
 	private final int MIN_VALUE = 1;
 	
-	public int getVALUE() {
-		return VALUE;
+	public int getValue() {
+		return value;
 	}
 	public void throwDice()
 	{
